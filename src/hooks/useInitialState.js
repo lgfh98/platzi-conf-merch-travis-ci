@@ -4,7 +4,7 @@ import initialState from '../initialState';
 const useInitialState = () => {
   const [state, setState] = useState(initialState);
 
-  const addToCard = (payload) => {
+  const addToCart = (payload) => {
     setState({
       ...state,
       cart: [...state.cart, payload],
@@ -19,7 +19,7 @@ const useInitialState = () => {
   };
 
   return {
-    addToCard,
+    addToCart,
     removeFromCard,
     state,
   };
