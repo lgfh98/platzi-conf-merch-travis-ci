@@ -12,7 +12,7 @@ const Checkout = () => (
           <span>$10</span>
         </div>
         <button type="button">
-          <i className="fas fa-trash-alt" title="Eliminar" />
+          <i className="fas fa-trash-alt fa-2x" title="Eliminar" />
         </button>
       </div>
     </div>
