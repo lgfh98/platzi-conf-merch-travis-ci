@@ -1,10 +1,17 @@
 import React from 'react';
-import '../styles/components/Footer.css';
+import { Link } from 'react-router-dom';
+import '../styles/components/Header.css';
 
-const Footer = () => (
-  <div className="Footer">
-    <p className="Footer-title">Platzi Conf Merch</p>
-    <p className="Footer-copy">Todos los Izquierdos Reservados</p>
+const Header = () => (
+  <div className="Header">
+    <h1 className="Header-title">
+      <Link to="/">PlatziConf Merch</Link>
+    </h1>
+    <div className="Header-checkout">
+      <Link to="/checkout">
+        <i className="fas fa-shopping-basket" title="Checkout" />
+      </Link>
+    </div>
   </div>
 );
-export default Footer;
+export default Header;
