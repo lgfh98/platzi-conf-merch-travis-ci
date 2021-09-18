@@ -1,23 +1,33 @@
 import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import L from 'leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+const DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const Map = () => {
-  const mapStyles = {
-    height: '50vh',
-    width: '100%',
-  };
-
-  const defaultCenter = {
-    lat: 19.426761,
-    lng: -99.1718792,
-  };
+  const position = [51.505, -0.09];
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCRItw3ldgXpKiq2Bru3eZarLiTT9cf8OM">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={9} center={defaultCenter}>
-        <Marker position={defaultCenter} />
-      </GoogleMap>
-    </LoadScript>
+    <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
+      <TileLayer
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={position}>
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+    </MapContainer>
   );
 };
 

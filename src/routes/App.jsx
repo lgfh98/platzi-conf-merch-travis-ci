@@ -13,6 +13,8 @@ import AppContext from '../context/AppContext';
 
 import useInitialState from '../hooks/useInitialState';
 
+import '../styles/components/App.css';
+
 const App = () => {
   const initialState = useInitialState();
   return (

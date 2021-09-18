@@ -3,4 +3,9 @@
 }
 .Success-map {
   margin: 10px 0 0 0;
+  height: 50vh;
+}
+
+.Success-map > div {
+  height: inherit;
 }
