@@ -17,6 +17,11 @@ import '../styles/components/App.css';
 
 const App = () => {
   const initialState = useInitialState();
+
+  if (initialState.loading) {
+    return <h1>Cargando...</h1>;
+  }
+
   return (
     <AppContext.Provider value={initialState}>
       <BrowserRouter>
