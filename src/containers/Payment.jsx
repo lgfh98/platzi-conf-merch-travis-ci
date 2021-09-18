@@ -12,7 +12,7 @@ const Payment = () => {
 
   const paypalOtions = {
     clientId:
-      'AQVI4Wz9Lh7Mt5R-84D-QbyoAGp3Sz_v3AmwzVAsczlJ_j1idVsznGsDb7Wj-pkgl5792DY-bszztRZT',
+      'AfKBEDOUF9Mryjjdj5VyIzau0gqdBC1wf4aUOW6RU3upwMhnvFSE_e4ZoEW9_7r0RmyvKll-LzDoX6Uf',
     intent: 'capture',
     currency: 'USD',
   };
