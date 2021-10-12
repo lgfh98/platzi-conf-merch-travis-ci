@@ -27,25 +27,25 @@ const App = () => {
       <HashRouter>
         <Layout>
           <Switch>
-            <Route exact path="/platzi-conf-merch-travis-c" component={Home} />
+            <Route exact path="/platzi-conf-merch-travis-ci" component={Home} />
             <Route
               exact
-              path="/platzi-conf-merch-travis-c/checkout"
+              path="/platzi-conf-merch-travis-ci/checkout"
               component={Checkout}
             />
             <Route
               exact
-              path="/platzi-conf-merch-travis-c/checkout/information"
+              path="/platzi-conf-merch-travis-ci/checkout/information"
               component={Information}
             />
             <Route
               exact
-              path="/platzi-conf-merch-travis-c/checkout/payment"
+              path="/platzi-conf-merch-travis-ci/checkout/payment"
               component={Payment}
             />
             <Route
               exact
-              path="/platzi-conf-merch-travis-c/checkout/success"
+              path="/platzi-conf-merch-travis-ci/checkout/success"
               component={Success}
             />
             <Route component={NotFound} />
