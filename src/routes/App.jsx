@@ -24,30 +24,14 @@ const App = () => {
 
   return (
     <AppContext.Provider value={initialState}>
-      <HashRouter>
+      <HashRouter basename="/platzi-conf-merch-travis-ci">
         <Layout>
           <Switch>
-            <Route exact path="/platzi-conf-merch-travis-ci" component={Home} />
-            <Route
-              exact
-              path="/platzi-conf-merch-travis-ci/checkout"
-              component={Checkout}
-            />
-            <Route
-              exact
-              path="/platzi-conf-merch-travis-ci/checkout/information"
-              component={Information}
-            />
-            <Route
-              exact
-              path="/platzi-conf-merch-travis-ci/checkout/payment"
-              component={Payment}
-            />
-            <Route
-              exact
-              path="/platzi-conf-merch-travis-ci/checkout/success"
-              component={Success}
-            />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/checkout" component={Checkout} />
+            <Route exact path="/checkout/information" component={Information} />
+            <Route exact path="/checkout/payment" component={Payment} />
+            <Route exact path="/checkout/success" component={Success} />
             <Route component={NotFound} />
           </Switch>
         </Layout>
