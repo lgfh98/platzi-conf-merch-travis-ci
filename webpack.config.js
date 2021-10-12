@@ -9,7 +9,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
-    publicPath: '/platzi-conf-merch-travis-c',
+    publicPath: '/platzi-conf-merch-travis-ci',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
