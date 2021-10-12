@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="manifest" href="./manifest.json"/><title>Platzi conf merch</title><script src="https://kit.fontawesome.com/473d269aa9.js" crossorigin="anonymous"></script><script defer="defer" src="/bundle.cfaee78bf7f362dbb663.js"></script><link href="/assets/main.7a27409a988e59e481c9.css" rel="stylesheet"></head><body><div id="app"></div><script>if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker
+            .register('service-worker.js')
+            .then(
+              function (registration) {
+                console.log(
+                  'ServiceWorker registration successful with scope: ',
+                  registration.scope
+                );
+              },
+              function (err) {
+                console.log('ServiceWorker registration failed: ', err);
+              }
+            )
+            .catch(function (err) {
+              console.log(err);
+            });
+        });
+      } else {
+        console.log('service worker is not supported');
+      }</script></body></html>
