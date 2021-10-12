@@ -13,6 +13,7 @@ script:
   - yarn build
 
 notifications:
+  slack: cursotravispl-oj69982:80chAOzXqStXjwMnI1wVXoOv
   email:
     recipients:
       - lgfigueroah98@gmail.com
