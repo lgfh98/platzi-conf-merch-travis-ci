@@ -27,7 +27,11 @@ const App = () => {
       <HashRouter>
         <Layout>
           <Switch>
-            <Route exact path="/platzi-conf-merch-travis-ci" component={Home} />
+            <Route
+              exact
+              path="/https://lgfh98.github.io/platzi-conf-merch-travis-ci"
+              component={Home}
+            />
             <Route
               exact
               path="/platzi-conf-merch-travis-ci/checkout"
