@@ -30,7 +30,7 @@ const Payment = () => {
         payment: data,
       };
       addNewOrder(newOrder);
-      history.push('/platzi-conf-merch-travis-ci/checkout/success');
+      history.push('/checkout/success');
     }
   };
 

@@ -26,7 +26,7 @@ const Information = () => {
       phone: formData.get('phone'),
     };
     addToBuyer(buyer);
-    history.push('/platzi-conf-merch-travis-ci/checkout/payment');
+    history.push('/checkout/payment');
   };
 
   return (
